@@ -1,0 +1,99 @@
+# Simple linear motion, no occlusion, no temporal disappearances
+# Experiment configuration
+experiment:
+  output_dir: "./experiments/simulated/sim-1/outputs"
+  log_level: "INFO"
+  save_results: true
+  verbose: false
+
+# Dataset configuration
+dataset_config:
+  data_path: "./experiments/simulated/sim-1/data/frames"
+  preprocess_pcd: true
+  voxel_size: 0.03                    
+  nb_neighbors: 15                    
+  std_ratio: 0.1                     
+  min_points: 5                      
+
+# Clustering configuration
+clustering_config:
+  # DBSCAN parameters
+  eps: 0.45                          
+  min_points: 10                      
+  max_points: 10000                
+  
+  # Size constraints 
+  min_height: 0.1                    
+  max_height: 15.0                   
+  min_volume: 0.1              
+  max_volume: 500.0                    
+  z_range: [-10.0, 10.0]            
+  
+  # Postprocessing parameters
+  merge_overlapping: true         
+  overlap_threshold: 0.3  
+  remove_edge_clusters: false  
+  edge_margin: 1.0                 
+  roi_boundary: null
+
+# Tracker configuration
+tracker_config:
+  # Track management
+  max_age: 10000                     # Essentially never delete the track
+  min_hits: 5                        
+  deletion_threshold: 10000          # Essentially never delete the track
+  
+  # Filtering
+  min_confidence: 0.0               
+  max_velocity: 10.0                
+  
+  # Performance
+  enable_track_smoothing: false      # Disable - constant velocity model is optimal
+  smoothing_window: 7                
+  
+  # Initialization
+  initial_velocity_estimate: true    # Estimate velocity from multiple detections
+  initial_velocity_window: 5         # Use 3 frames for better velocity estimation
+  
+  # Debug
+  verbose: false
+  
+  # Nested configurations
+  kalman_config:
+    # State configuration
+    track_centroid_position: true
+    track_centroid_velocity: true    # MUST be true for constant velocity model
+    track_bbox_dim_sizes: false     
+    track_bbox_dim_velocities: false
+    
+    # Prediction parameters
+    min_delta_t: 0.01             
+    max_delta_t: 1.0      
+
+    # Measurement configuration
+    measure_centroid_position: true
+    measure_bbox_dim_sizes: false
+    
+    # Process noise covariance
+    # If process noise is too high, velocity estimates will be noisy
+    process_noise_centroid_position: 0.00001   # Near zero for perfect linear motion
+    process_noise_centroid_velocity: 0.00001   # Near zero for constant velocity
+    
+    # Measurement noise covariance
+    # If measurement noise is too high, velocity won't update properly
+    measurement_noise_centroid_position: 0.00001  # Very low for perfect measurements
+    
+    # Initial uncertainty
+    # If initial velocity uncertainty is too low, velocity won't update enough
+    initial_centroid_position_uncertainty: 0.01
+    initial_centroid_velocity_uncertainty: 5.00 # High value aids better approximation
+        
+  # Association configuration
+  association_config:
+    max_distance: 50.0             
+    max_velocity: 100.0             
+    cost_type: "iou_3d"             
+    iou_threshold: 0.05              
+    gating_enabled: false           
+    use_velocity_prediction: false   
+    mahalanobis_threshold: 100.0    

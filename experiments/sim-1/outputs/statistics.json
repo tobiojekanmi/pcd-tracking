@@ -1,0 +1,71 @@
+{
+  "total_frames": 601,
+  "total_time_seconds": 6.2705237865448,
+  "fps": 95.84526276570662,
+  "total_detections": 3000,
+  "average_detections_per_frame": 4.9916805324459235,
+  "total_tracks": 2990,
+  "unique_tracks": 5,
+  "average_tracks_per_frame": 4.97504159733777,
+  "average_track_duration_seconds": 59.7,
+  "max_track_duration_seconds": 59.7,
+  "average_track_frames": 598.0,
+  "track_data_completeness": 1.0,
+  "bbox_statistics": {
+    "mean_bbox_size": [
+      0.9514327354203956,
+      0.9915172612515,
+      1.8644355297088624
+    ],
+    "std_bbox_size": [
+      0.6346358821393936,
+      0.6211265917498829,
+      1.2868475720233483
+    ],
+    "min_bbox_size": [
+      0.39264940253419006,
+      0.33971795626270695,
+      0.4979429244995117
+    ],
+    "max_bbox_size": [
+      1.9466438293457031,
+      1.9877300262451172,
+      3.803541898727417
+    ],
+    "sample_count": 2990
+  },
+  "trajectory_data_fields": [
+    "position",
+    "velocity",
+    "bbox_centroid",
+    "bbox_extent",
+    "bbox_min",
+    "bbox_max",
+    "confidence",
+    "covariance"
+  ],
+  "store_full_trajectory_data": true,
+  "track_bbox_dimensions": true,
+  "measure_bbox_dimensions": true,
+  "tracker_statistics": {
+    "tracks_created": 5,
+    "tracks_deleted": 0,
+    "total_updates": 2995,
+    "missed_updates": 5,
+    "association_success_rate": 1.0,
+    "average_track_age": 1200.0,
+    "active_tracks": 5,
+    "total_tracks": 5,
+    "unconfirmed_tracks": 0,
+    "frame_count": 601,
+    "next_track_id": 5,
+    "kalman_config": {
+      "state_dim": 9,
+      "measurement_dim": 6,
+      "track_centroid_position": true,
+      "track_centroid_velocity": true,
+      "track_bbox_dim_sizes": true,
+      "track_bbox_dim_velocities": false
+    }
+  }
+}

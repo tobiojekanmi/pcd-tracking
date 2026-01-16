@@ -1,0 +1,103 @@
+clustering_config:
+  edge_margin: 1.0
+  eps: 0.45
+  max_height: 15.0
+  max_points: 10000
+  max_volume: 500.0
+  merge_overlapping: true
+  min_height: 0.1
+  min_points: 10
+  min_volume: 0.1
+  overlap_threshold: 0.3
+  remove_edge_clusters: false
+  roi_boundary: null
+  z_range:
+  - -10.0
+  - 10.0
+dataset_config:
+  data_path: ./experiments/simulated/sim-1/data/frames
+  min_points: 5
+  nb_neighbors: 15
+  preprocess_pcd: true
+  std_ratio: 0.1
+  voxel_size: 0.03
+experiment:
+  log_level: INFO
+  measure_bbox_dimensions: true
+  output_dir: ./experiments/simulated/sim-1/outputs
+  output_format: json
+  save_frequency: 1
+  save_results: true
+  store_full_trajectory_data: true
+  track_bbox_dimensions: true
+  trajectory_data_fields:
+  - position
+  - velocity
+  - bbox_centroid
+  - bbox_extent
+  - bbox_min
+  - bbox_max
+  - confidence
+  - covariance
+tracker_config:
+  association_config:
+    cost_type: iou_3d
+    distance_weight: 0.5
+    euclidean_threshold: 1.0
+    gating_enabled: false
+    hybrid_threshold: 0.5
+    iou_threshold: 0.05
+    iou_weight: 0.5
+    mahalanobis_threshold: 100.0
+    max_distance: 50.0
+    max_velocity: 100.0
+    use_velocity_prediction: false
+  deletion_threshold: 10000
+  enable_track_smoothing: false
+  initial_velocity_estimate: true
+  initial_velocity_window: 5
+  kalman_config:
+    _measurement_component_indices:
+      bbox_sizes: !!python/tuple
+      - 3
+      - 6
+      centroid_position: !!python/tuple
+      - 0
+      - 3
+    _measurement_dim: 6
+    _state_component_indices:
+      bbox_sizes: !!python/tuple
+      - 6
+      - 9
+      centroid_position: !!python/tuple
+      - 0
+      - 3
+      centroid_velocity: !!python/tuple
+      - 3
+      - 6
+    _state_dim: 9
+    initial_bbox_size_uncertainty: 0.5
+    initial_bbox_velocity_uncertainty: 1.0
+    initial_centroid_position_uncertainty: 0.01
+    initial_centroid_velocity_uncertainty: 5.0
+    max_delta_t: 1.0
+    measure_bbox_dim_sizes: true
+    measure_centroid_position: true
+    measurement_noise_bbox_sizes: 0.05
+    measurement_noise_centroid_position: 1.0e-05
+    min_covariance_eigenvalue: 1.0e-06
+    min_delta_t: 0.01
+    process_noise_bbox_sizes: 0.05
+    process_noise_bbox_velocities: 0.1
+    process_noise_centroid_position: 1.0e-05
+    process_noise_centroid_velocity: 1.0e-05
+    track_bbox_dim_sizes: true
+    track_bbox_dim_velocities: false
+    track_centroid_position: true
+    track_centroid_velocity: true
+  max_age: 10000
+  max_velocity: 10.0
+  min_confidence: 0.0
+  min_hits: 5
+  smoothing_window: 7
+  verbose: false
