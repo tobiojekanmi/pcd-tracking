@@ -47,9 +47,9 @@ def load_pcd_files(map_type):
     """Load PCD files for specified map type"""
     current_dir = os.path.dirname(os.path.abspath(__file__))
     if map_type == "human":
-        map_dir = os.path.join(current_dir, "data/mapHumanOnly")
+        map_dir = os.path.join(current_dir, "data/real/mapHumanOnly")
     else:  # all
-        map_dir = os.path.join(current_dir, "data/mapAll")
+        map_dir = os.path.join(current_dir, "data/real/mapAll")
 
     all_files = glob.glob(os.path.join(map_dir, "*.pcd"))
     pcd_files = sorted(
@@ -134,7 +134,7 @@ def main():
     if not human_files and not all_files:
         print("\nError: No point cloud files found!")
         print(
-            "Please ensure the PCD files are in the data/mapHumanOnly and/or data/mapAll directories."
+            "Please ensure the PCD files are in the data/real/mapHumanOnly and/or data/real/mapAll directories."
         )
         sys.exit(1)
 
@@ -172,7 +172,7 @@ def main():
 
     # Create visualizer with black background
     print("Creating visualizer window...")
-    vis = o3d.visualization.Visualizer()
+    vis = o3d.visualization.Visualizer()  # type: ignore
 
     window_title = f"Point Cloud Playback - {choice_mode.replace('_', ' ').title()}"
     if choice_mode == "both":
@@ -232,8 +232,8 @@ def main():
         # Display progress
         if i % 5 == 0:  # Update more frequently
             if choice_mode == "both":
-                human_count = len(human_pcd.points) if human_pcd.has_points() else 0
-                all_count = len(all_pcd.points) if all_pcd.has_points() else 0
+                human_count = len(human_pcd.points) if human_pcd.has_points() else 0  # type: ignore
+                all_count = len(all_pcd.points) if all_pcd.has_points() else 0  # type: ignore
                 timestamp = extract_timestamp(files_to_use[i][0])
                 progress = (i + 1) / len(files_to_use) * 100
                 print(
