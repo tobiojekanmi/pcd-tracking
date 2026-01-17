@@ -1,0 +1,162 @@
+{
+  "1": {
+    "birth_time_ms": 0,
+    "death_time_ms": 60000,
+    "visibility_intervals": [
+      [
+        0,
+        59999
+      ]
+    ],
+    "occlusion_intervals": [],
+    "total_visible_frames": 600,
+    "visibility_percentage": 99.83,
+    "obj_type": "dynamic",
+    "shape": "cube",
+    "size": [
+      0.6000000238418579,
+      0.6000000238418579,
+      1.2000000476837158
+    ],
+    "color": [
+      1.0,
+      0.30000001192092896,
+      0.30000001192092896
+    ],
+    "initial_position": [
+      -12.0,
+      5.0,
+      1.0
+    ],
+    "point_density": 140.0,
+    "noise_std": 0.015
+  },
+  "2": {
+    "birth_time_ms": 0,
+    "death_time_ms": 60000,
+    "visibility_intervals": [
+      [
+        0,
+        59999
+      ]
+    ],
+    "occlusion_intervals": [],
+    "total_visible_frames": 600,
+    "visibility_percentage": 99.83,
+    "obj_type": "dynamic",
+    "shape": "cube",
+    "size": [
+      0.8999999761581421,
+      0.8999999761581421,
+      0.8999999761581421
+    ],
+    "color": [
+      0.30000001192092896,
+      0.30000001192092896,
+      1.0
+    ],
+    "initial_position": [
+      12.0,
+      -5.0,
+      1.0
+    ],
+    "point_density": 110.0,
+    "noise_std": 0.015
+  },
+  "3": {
+    "birth_time_ms": 10000,
+    "death_time_ms": 60000,
+    "visibility_intervals": [
+      [
+        10000,
+        59999
+      ]
+    ],
+    "occlusion_intervals": [],
+    "total_visible_frames": 500,
+    "visibility_percentage": 83.19,
+    "obj_type": "dynamic",
+    "shape": "cylinder",
+    "size": [
+      0.800000011920929,
+      0.800000011920929,
+      1.5
+    ],
+    "color": [
+      0.30000001192092896,
+      0.800000011920929,
+      0.30000001192092896
+    ],
+    "initial_position": [
+      0.0,
+      12.0,
+      1.0
+    ],
+    "point_density": 125.0,
+    "noise_std": 0.015
+  },
+  "4": {
+    "birth_time_ms": 0,
+    "death_time_ms": 60000,
+    "visibility_intervals": [
+      [
+        0,
+        59999
+      ]
+    ],
+    "occlusion_intervals": [],
+    "total_visible_frames": 600,
+    "visibility_percentage": 99.83,
+    "obj_type": "static",
+    "shape": "cube",
+    "size": [
+      2.5,
+      2.5,
+      4.0
+    ],
+    "color": [
+      0.699999988079071,
+      0.5,
+      0.30000001192092896
+    ],
+    "initial_position": [
+      10.0,
+      10.0,
+      2.0
+    ],
+    "point_density": 95.0,
+    "noise_std": 0.015
+  },
+  "5": {
+    "birth_time_ms": 0,
+    "death_time_ms": 60000,
+    "visibility_intervals": [
+      [
+        0,
+        59999
+      ]
+    ],
+    "occlusion_intervals": [],
+    "total_visible_frames": 600,
+    "visibility_percentage": 99.83,
+    "obj_type": "static",
+    "shape": "cylinder",
+    "size": [
+      2.0,
+      2.0,
+      3.0
+    ],
+    "color": [
+      0.4000000059604645,
+      0.699999988079071,
+      0.699999988079071
+    ],
+    "initial_position": [
+      -10.0,
+      -10.0,
+      1.5
+    ],
+    "point_density": 85.0,
+    "noise_std": 0.015
+  }
+}

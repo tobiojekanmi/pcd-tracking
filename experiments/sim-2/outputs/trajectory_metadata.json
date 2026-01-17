@@ -1,0 +1,52 @@
+{
+  "total_tracks": 6,
+  "total_trajectory_points": 2876,
+  "data_fields_included": [
+    "position",
+    "velocity",
+    "bbox_centroid",
+    "bbox_extent",
+    "bbox_min",
+    "bbox_max",
+    "confidence",
+    "covariance"
+  ],
+  "frame_id_consistency_check": {
+    "0": {
+      "min_frame_id": 2,
+      "max_frame_id": 599,
+      "frame_count": 598,
+      "frame_id_gaps": []
+    },
+    "1": {
+      "min_frame_id": 2,
+      "max_frame_id": 599,
+      "frame_count": 598,
+      "frame_id_gaps": []
+    },
+    "2": {
+      "min_frame_id": 2,
+      "max_frame_id": 599,
+      "frame_count": 598,
+      "frame_id_gaps": []
+    },
+    "3": {
+      "min_frame_id": 2,
+      "max_frame_id": 249,
+      "frame_count": 248,
+      "frame_id_gaps": []
+    },
+    "4": {
+      "min_frame_id": 102,
+      "max_frame_id": 599,
+      "frame_count": 498,
+      "frame_id_gaps": []
+    },
+    "5": {
+      "min_frame_id": 264,
+      "max_frame_id": 599,
+      "frame_count": 336,
+      "frame_id_gaps": []
+    }
+  }
+}
