@@ -1,0 +1,344 @@
+# # Tracking Config 4: Full complexity - non-linear, disappearances, and collisions
+# experiment:
+#   output_dir: "./experiments/simulated/sim-3/outputs"
+#   log_level: "DEBUG"
+#   save_results: true
+#   verbose: true
+
+# dataset_config:
+#   data_path: "./experiments/simulated/sim-3/data/frames"
+#   preprocess_pcd: true
+#   voxel_size: 0.02  # Finest for maximum detail
+#   nb_neighbors: 20
+#   std_ratio: 0.08  # Aggressive outlier removal
+#   min_points: 5
+
+# clustering_config:
+#   # DBSCAN parameters - balanced for all challenges
+#   eps: 0.3
+#   min_points: 12  # Higher to ensure stable clusters
+#   max_points: 1500
+  
+#   # Size constraints
+#   min_height: 0.08
+#   max_height: 15.0
+#   min_volume: 0.03
+#   max_volume: 30.0  # Conservative to avoid merged objects
+#   z_range: [-2.0, 12.0]
+  
+#   # Postprocessing - adaptive
+#   merge_overlapping: false  # Critical: don't merge during complex scenarios
+#   overlap_threshold: 0.15
+#   remove_edge_clusters: true
+#   edge_margin: 1.5
+#   # roi_boundary: [-15.0, 15.0, -15.0, 15.0, -2.0, 12.0]
+  
+#   # Advanced clustering features
+#   use_adaptive_eps: true
+#   min_eps: 0.2
+#   max_eps: 0.5
+#   cluster_refinement: true
+
+# tracker_config:
+#   # Track management - robust for all challenges
+#   max_age: 20  # Very long for reappearances
+#   min_hits: 3  # Stable confirmation
+#   deletion_threshold: 50  # Very long grace period
+  
+#   # Filtering
+#   min_confidence: 0.4
+#   max_velocity: 5.0  # Higher for all scenarios
+  
+#   # Performance
+#   enable_track_smoothing: true
+#   smoothing_window: 9  # Longer for stability
+  
+#   # Advanced features
+#   collision_detection: true
+#   collision_recovery: true
+#   occlusion_handling: true
+#   reappearance_detection: true
+#   min_separation_distance: 0.15
+  
+#   # Initialization
+#   initial_velocity_estimate: true
+#   initial_velocity_window: 5  # More frames for complex motion
+  
+#   # Memory management
+#   track_history_length: 100
+#   enable_track_fusion: true  # Fuse similar tracks after reappearance
+  
+#   # Debug
+#   verbose: true
+  
+#   # Kalman configuration - adaptive for all scenarios
+#   kalman_config:
+#     # State configuration
+#     track_centroid_position: true
+#     track_centroid_velocity: true
+#     track_bbox_dim_sizes: true
+#     track_bbox_dim_velocities: true
+    
+#     # Measurement configuration
+#     measure_centroid_position: true
+#     measure_bbox_dim_sizes: true
+    
+#     # Adaptive process noise
+#     adaptive_process_noise: true
+#     base_process_noise_centroid_position: 0.05
+#     base_process_noise_centroid_velocity: 0.1
+#     base_process_noise_bbox_sizes: 0.02
+#     base_process_noise_bbox_velocities: 0.05
+    
+#     # Measurement noise - moderate
+#     measurement_noise_centroid_position: 0.03
+#     measurement_noise_bbox_sizes: 0.08
+    
+#     # Initial uncertainty - high for unknown scenarios
+#     initial_centroid_position_uncertainty: 2.0
+#     initial_centroid_velocity_uncertainty: 5.0
+#     initial_bbox_size_uncertainty: 0.5
+#     initial_bbox_velocity_uncertainty: 2.0
+    
+#     # Smoothing parameters
+#     min_delta_t: 0.05
+#     max_delta_t: 0.1  # Short for frequent updates
+  
+#   # Association configuration - multi-strategy
+#   association_config:
+#     max_distance: 4.0  # Long for reappearances
+#     max_velocity: 6.0
+#     cost_type: "composite"  # Composite cost function
+#     iou_threshold: 0.15
+#     gating_enabled: true
+#     use_velocity_prediction: true
+#     mahalanobis_threshold: 7.0
+    
+#     # Multiple association strategies
+#     primary_cost: "iou_3d"
+#     secondary_cost: "centroid_distance"
+#     tertiary_cost: "feature_similarity"
+    
+#     # Feature matching for reappearances
+#     feature_matching: true
+#     feature_weight: 0.4
+#     color_matching: true
+#     size_matching: true
+    
+#     # Collision handling
+#     # collision_handling: "adaptive"
+#     # collision_distance_threshold: 0.3
+#     # enable_track_merging: false  # Critical: don't merge during collisions
+#     # enable_track_splitting: true
+    
+#     # # Occlusion handling
+#     # occlusion_detection: true
+#     # occlusion_recovery_threshold: 0.7
+
+
+
+# Tracking Config 3: Non-linear motion with collisions
+# experiment:
+#   output_dir: "./experiments/simulated/sim-2/outputs"
+#   log_level: "DEBUG"
+#   save_results: true
+#   verbose: true
+
+# dataset_config:
+#   data_path: "./experiments/simulated/sim-2/data/frames"
+#   preprocess_pcd: true
+#   voxel_size: 0.025  # Finer for collision detection
+#   nb_neighbors: 10
+#   std_ratio: 0.15
+#   min_points: 5
+
+# clustering_config:
+#   # DBSCAN parameters - tight for collision separation
+#   eps: 0.25
+#   min_points: 10
+#   max_points: 20000
+  
+#   # Size constraints
+#   min_height: 0.1
+#   max_height: 10.0
+#   min_volume: 0.05
+#   max_volume: 50.0  # Smaller max for individual objects during collision
+#   z_range: [0.0, 10.0]
+  
+#   # Postprocessing - critical for collisions
+#   merge_overlapping: false  # DON'T merge during collisions!
+#   overlap_threshold: 0.1  # Very low to prevent merging
+#   remove_edge_clusters: true  # Remove partial clusters
+#   edge_margin: 1.0
+#   # roi_boundary: [-15.0, 15.0, -15.0, 15.0, 0.0, 10.0]
+
+# tracker_config:
+#   # Track management - handle temporary merging during collisions
+#   max_age: 15  # Longer to survive through collisions
+#   min_hits: 3  # More hits required for stable tracks
+#   deletion_threshold: 20
+  
+#   # Filtering
+#   min_confidence: 0.5  # Higher confidence required
+#   max_velocity: 2.0
+  
+#   # Performance
+#   enable_track_smoothing: true
+#   smoothing_window: 5  # Shorter window for faster response
+  
+#   # Special features for collisions
+#   collision_detection: true  # Enable collision detection
+#   collision_recovery: true  # Enable track recovery after collisions
+#   min_separation_distance: 0.2  # Minimum distance before considering collision
+  
+#   # Initialization
+#   initial_velocity_estimate: true
+#   initial_velocity_window: 4
+  
+#   # Debug
+#   verbose: true
+  
+#   # Kalman configuration - robust for collisions
+#   kalman_config:
+#     # State configuration
+#     track_centroid_position: true
+#     track_centroid_velocity: true
+#     track_bbox_dim_sizes: true
+#     track_bbox_dim_velocities: false  # Don't track bbox velocities during collisions
+    
+#     # Measurement configuration
+#     measure_centroid_position: true
+#     measure_bbox_dim_sizes: true
+    
+#     # Process noise - higher to handle sudden changes during collisions
+#     process_noise_centroid_position: 0.1
+#     process_noise_centroid_velocity: 0.2
+#     process_noise_bbox_sizes: 0.05
+#     process_noise_bbox_velocities: 0.1
+    
+#     # Measurement noise - moderate
+#     measurement_noise_centroid_position: 0.05
+#     measurement_noise_bbox_sizes: 0.1
+    
+#     # Initial uncertainty
+#     initial_centroid_position_uncertainty: 1.0
+#     initial_centroid_velocity_uncertainty: 3.0
+#     initial_bbox_size_uncertainty: 0.3
+#     initial_bbox_velocity_uncertainty: 1.0
+    
+#     # Smoothing parameters
+#     min_delta_t: 0.05
+#     max_delta_t: 0.15
+  
+#   # Association configuration - robust for collisions
+#   association_config:
+#     max_distance: 2.5
+#     max_velocity: 4.0  # Higher for collision velocities
+#     cost_type: "iou_3d"
+#     iou_threshold: 0.1  # Lower threshold for overlapping objects
+#     gating_enabled: true
+#     use_velocity_prediction: false  # Disable during collisions (unreliable)
+#     mahalanobis_threshold: 10.0  # Looser gating for collisions
+#     # collision_handling: "predict_and_match"  # Special collision handling
+#     # track_splitting: true  # Enable track splitting after collisions
+
+
+# Simple linear motion, no occlusion, no temporal disappearances
+# Experiment configuration
+experiment:
+  output_dir: "./experiments/simulated/sim-3/outputs"
+  log_level: "INFO"
+  save_results: true
+  verbose: false
+
+# Dataset configuration
+dataset_config:
+  data_path: "./experiments/simulated/sim-3/data/frames"
+  preprocess_pcd: true
+  voxel_size: 0.03                    
+  nb_neighbors: 15                    
+  std_ratio: 0.1                     
+  min_points: 5                      
+
+# Clustering configuration
+clustering_config:
+  # DBSCAN parameters
+  eps: 0.45                          
+  min_points: 10                      
+  max_points: 10000                
+  
+  # Size constraints 
+  min_height: 0.1                    
+  max_height: 15.0                   
+  min_volume: 0.1              
+  max_volume: 500.0                    
+  z_range: [-10.0, 10.0]            
+  
+  # Postprocessing parameters
+  merge_overlapping: true         
+  overlap_threshold: 0.3  
+  remove_edge_clusters: false  
+  edge_margin: 1.0                 
+  roi_boundary: null
+
+# Tracker configuration
+tracker_config:
+  # Track management
+  max_age: 10000                     # Essentially never delete the track
+  min_hits: 5                        
+  deletion_threshold: 10000          # Essentially never delete the track
+  
+  # Filtering
+  min_confidence: 0.0               
+  max_velocity: 10.0                
+  
+  # Performance
+  enable_track_smoothing: false      # Disable - constant velocity model is optimal
+  smoothing_window: 7                
+  
+  # Initialization
+  initial_velocity_estimate: true    # Estimate velocity from multiple detections
+  initial_velocity_window: 5         # Use 3 frames for better velocity estimation
+  
+  # Debug
+  verbose: false
+  
+  # Nested configurations
+  kalman_config:
+    # State configuration
+    track_centroid_position: true
+    track_centroid_velocity: true    # MUST be true for constant velocity model
+    track_bbox_dim_sizes: false     
+    track_bbox_dim_velocities: false
+    
+    # Prediction parameters
+    min_delta_t: 0.01             
+    max_delta_t: 1.0      
+
+    # Measurement configuration
+    measure_centroid_position: true
+    measure_bbox_dim_sizes: false
+    
+    # Process noise covariance
+    # If process noise is too high, velocity estimates will be noisy
+    process_noise_centroid_position: 0.00001   # Near zero for perfect linear motion
+    process_noise_centroid_velocity: 0.00001   # Near zero for constant velocity
+    
+    # Measurement noise covariance
+    # If measurement noise is too high, velocity won't update properly
+    measurement_noise_centroid_position: 0.00001  # Very low for perfect measurements
+    
+    # Initial uncertainty
+    # If initial velocity uncertainty is too low, velocity won't update enough
+    initial_centroid_position_uncertainty: 0.01
+    initial_centroid_velocity_uncertainty: 5.00 # High value aids better approximation
+        
+  # Association configuration
+  association_config:
+    cost_type: "iou_3d"             
+    iou_threshold: 0.1              
+    max_distance: 50.0             
+    max_velocity: 100.0             
+    gating_enabled: false           
+    use_velocity_prediction: false   
+    mahalanobis_threshold: 100.0    

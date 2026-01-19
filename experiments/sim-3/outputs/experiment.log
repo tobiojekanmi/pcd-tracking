@@ -1,0 +1,295 @@
+2026-01-21 12:05:26,385 - INFO - Kalman filter configured for bbox dimension tracking
+2026-01-21 12:05:26,386 - INFO -   track_bbox_dim_sizes: True
+2026-01-21 12:05:26,386 - INFO -   measure_bbox_dim_sizes: True
+2026-01-21 12:05:26,386 - INFO - Initializing components...
+2026-01-21 12:05:26,394 - INFO - Dataset contains 601 frames
+2026-01-21 12:05:26,394 - INFO - Kalman filter state dimension: 12
+2026-01-21 12:05:26,394 - INFO - Kalman filter measurement dimension: 6
+2026-01-21 12:05:26,394 - INFO - Kalman state indices: {'centroid_position': (0, 3), 'centroid_velocity': (3, 6), 'bbox_sizes': (6, 9), 'bbox_velocities': (9, 12)}
+2026-01-21 12:05:26,394 - INFO - Kalman measurement indices: {'centroid_position': (0, 3), 'bbox_sizes': (3, 6)}
+2026-01-21 12:05:26,394 - INFO - Starting experiment
+2026-01-21 12:05:26,394 - INFO - Data path: ./experiments/simulated/sim-3/data/frames
+2026-01-21 12:05:26,394 - INFO - Output directory: ./experiments/simulated/sim-3/outputs
+2026-01-21 12:05:26,394 - INFO - Output format: json
+2026-01-21 12:05:26,394 - INFO - Trajectory data collection: True
+2026-01-21 12:05:26,394 - INFO - Track bbox dimensions: True
+2026-01-21 12:05:26,397 - INFO - Configuration saved to experiments/simulated/sim-3/outputs/config.yaml
+2026-01-21 12:05:26,397 - INFO - Processing 601 frames...
+2026-01-21 12:05:26,406 - INFO - Processing frame 0/601
+2026-01-21 12:05:26,410 - ERROR - Error in experiment: too many values to unpack (expected 2)
+2026-01-21 12:05:42,095 - INFO - Kalman filter configured for bbox dimension tracking
+2026-01-21 12:05:42,095 - INFO -   track_bbox_dim_sizes: True
+2026-01-21 12:05:42,095 - INFO -   measure_bbox_dim_sizes: True
+2026-01-21 12:05:42,095 - INFO - Initializing components...
+2026-01-21 12:05:42,098 - INFO - Dataset contains 601 frames
+2026-01-21 12:05:42,098 - INFO - Kalman filter state dimension: 12
+2026-01-21 12:05:42,098 - INFO - Kalman filter measurement dimension: 6
+2026-01-21 12:05:42,098 - INFO - Kalman state indices: {'centroid_position': (0, 3), 'centroid_velocity': (3, 6), 'bbox_sizes': (6, 9), 'bbox_velocities': (9, 12)}
+2026-01-21 12:05:42,098 - INFO - Kalman measurement indices: {'centroid_position': (0, 3), 'bbox_sizes': (3, 6)}
+2026-01-21 12:05:42,098 - INFO - Starting experiment
+2026-01-21 12:05:42,098 - INFO - Data path: ./experiments/simulated/sim-3/data/frames
+2026-01-21 12:05:42,098 - INFO - Output directory: ./experiments/simulated/sim-3/outputs
+2026-01-21 12:05:42,098 - INFO - Output format: json
+2026-01-21 12:05:42,098 - INFO - Trajectory data collection: True
+2026-01-21 12:05:42,098 - INFO - Track bbox dimensions: True
+2026-01-21 12:05:42,102 - INFO - Configuration saved to experiments/simulated/sim-3/outputs/config.yaml
+2026-01-21 12:05:42,102 - INFO - Processing 601 frames...
+2026-01-21 12:05:42,106 - INFO - Processing frame 0/601
+2026-01-21 12:05:42,111 - INFO - Number of detections in frame: 0
+2026-01-21 12:05:42,504 - INFO - Processing frame 100/601
+2026-01-21 12:05:42,910 - INFO - Processing frame 200/601
+2026-01-21 12:05:43,223 - ERROR - Error in experiment: Invalid cost type: composite
+2026-01-21 12:09:21,736 - INFO - Kalman filter configured for bbox dimension tracking
+2026-01-21 12:09:21,736 - INFO -   track_bbox_dim_sizes: True
+2026-01-21 12:09:21,736 - INFO -   measure_bbox_dim_sizes: True
+2026-01-21 12:09:21,736 - INFO - Initializing components...
+2026-01-21 12:09:21,739 - INFO - Dataset contains 601 frames
+2026-01-21 12:09:21,739 - INFO - Kalman filter state dimension: 12
+2026-01-21 12:09:21,739 - INFO - Kalman filter measurement dimension: 6
+2026-01-21 12:09:21,739 - INFO - Kalman state indices: {'centroid_position': (0, 3), 'centroid_velocity': (3, 6), 'bbox_sizes': (6, 9), 'bbox_velocities': (9, 12)}
+2026-01-21 12:09:21,739 - INFO - Kalman measurement indices: {'centroid_position': (0, 3), 'bbox_sizes': (3, 6)}
+2026-01-21 12:09:21,739 - INFO - Starting experiment
+2026-01-21 12:09:21,739 - INFO - Data path: ./experiments/simulated/sim-3/data/frames
+2026-01-21 12:09:21,739 - INFO - Output directory: ./experiments/simulated/sim-3/outputs
+2026-01-21 12:09:21,739 - INFO - Output format: json
+2026-01-21 12:09:21,739 - INFO - Trajectory data collection: True
+2026-01-21 12:09:21,739 - INFO - Track bbox dimensions: True
+2026-01-21 12:09:21,743 - INFO - Configuration saved to experiments/simulated/sim-3/outputs/config.yaml
+2026-01-21 12:09:21,743 - INFO - Processing 601 frames...
+2026-01-21 12:09:21,746 - INFO - Processing frame 0/601
+2026-01-21 12:09:21,750 - INFO - Number of detections in frame: 0
+2026-01-21 12:09:22,268 - INFO - Processing frame 100/601
+2026-01-21 12:09:22,796 - INFO - Processing frame 200/601
+2026-01-21 12:09:23,203 - ERROR - Error in experiment: Invalid cost type: composite
+2026-01-21 14:00:14,292 - INFO - Kalman filter configured for bbox dimension tracking
+2026-01-21 14:00:14,292 - INFO -   track_bbox_dim_sizes: True
+2026-01-21 14:00:14,292 - INFO -   measure_bbox_dim_sizes: True
+2026-01-21 14:00:14,292 - INFO - Initializing components...
+2026-01-21 14:00:14,296 - INFO - Dataset contains 601 frames
+2026-01-21 14:00:14,296 - INFO - Kalman filter state dimension: 12
+2026-01-21 14:00:14,296 - INFO - Kalman filter measurement dimension: 6
+2026-01-21 14:00:14,296 - INFO - Kalman state indices: {'centroid_position': (0, 3), 'centroid_velocity': (3, 6), 'bbox_sizes': (6, 9), 'bbox_velocities': (9, 12)}
+2026-01-21 14:00:14,296 - INFO - Kalman measurement indices: {'centroid_position': (0, 3), 'bbox_sizes': (3, 6)}
+2026-01-21 14:00:14,296 - INFO - Starting experiment
+2026-01-21 14:00:14,297 - INFO - Data path: ./experiments/simulated/sim-3/data/frames
+2026-01-21 14:00:14,297 - INFO - Output directory: ./experiments/simulated/sim-3/outputs
+2026-01-21 14:00:14,297 - INFO - Output format: json
+2026-01-21 14:00:14,297 - INFO - Trajectory data collection: True
+2026-01-21 14:00:14,297 - INFO - Track bbox dimensions: True
+2026-01-21 14:00:14,300 - INFO - Configuration saved to experiments/simulated/sim-3/outputs/config.yaml
+2026-01-21 14:00:14,300 - INFO - Processing 601 frames...
+2026-01-21 14:00:14,304 - INFO - Processing frame 0/601
+2026-01-21 14:00:14,319 - INFO - Number of detections in frame: 0
+2026-01-21 14:00:14,834 - INFO - Processing frame 100/601
+2026-01-21 14:00:15,283 - INFO - Processing frame 200/601
+2026-01-21 14:00:15,611 - ERROR - Error in experiment: Invalid cost type: composite
+2026-01-21 14:01:58,420 - INFO - Kalman filter configured for bbox dimension tracking
+2026-01-21 14:01:58,420 - INFO -   track_bbox_dim_sizes: True
+2026-01-21 14:01:58,420 - INFO -   measure_bbox_dim_sizes: True
+2026-01-21 14:01:58,420 - INFO - Initializing components...
+2026-01-21 14:01:58,423 - INFO - Dataset contains 601 frames
+2026-01-21 14:01:58,423 - INFO - Kalman filter state dimension: 9
+2026-01-21 14:01:58,423 - INFO - Kalman filter measurement dimension: 6
+2026-01-21 14:01:58,423 - INFO - Kalman state indices: {'centroid_position': (0, 3), 'centroid_velocity': (3, 6), 'bbox_sizes': (6, 9)}
+2026-01-21 14:01:58,423 - INFO - Kalman measurement indices: {'centroid_position': (0, 3), 'bbox_sizes': (3, 6)}
+2026-01-21 14:01:58,423 - INFO - Starting experiment
+2026-01-21 14:01:58,423 - INFO - Data path: ./experiments/simulated/sim-3/data/frames
+2026-01-21 14:01:58,423 - INFO - Output directory: ./experiments/simulated/sim-3/outputs
+2026-01-21 14:01:58,423 - INFO - Output format: json
+2026-01-21 14:01:58,423 - INFO - Trajectory data collection: True
+2026-01-21 14:01:58,423 - INFO - Track bbox dimensions: True
+2026-01-21 14:01:58,427 - INFO - Configuration saved to experiments/simulated/sim-3/outputs/config.yaml
+2026-01-21 14:01:58,427 - INFO - Processing 601 frames...
+2026-01-21 14:01:58,430 - INFO - Processing frame 0/601
+2026-01-21 14:01:58,432 - INFO - Number of detections in frame: 3
+2026-01-21 14:01:58,432 - INFO -   Detection 0: centroid=[ 6.080768  -5.9940186  2.6446633], bbox_extent=[1.120914  1.1561823 4.687948 ]
+2026-01-21 14:01:58,432 - INFO -     bbox_min=[ 5.4574575  -6.575496    0.22768784], bbox_max=[ 6.578372 -5.419314  4.915636]
+2026-01-21 14:01:58,432 - INFO -   Detection 1: centroid=[-4.581731   6.988874   1.4135444], bbox_extent=[3.627105  0.5023513 2.82283  ]
+2026-01-21 14:01:58,433 - INFO -     bbox_min=[-6.630733    6.7448244   0.08123708], bbox_max=[-3.0036283  7.247176   2.904067 ]
+2026-01-21 14:01:58,433 - INFO -   Detection 2: centroid=[-14.06292     -0.04850246   1.0181073 ], bbox_extent=[0.70444393 0.63056695 1.322015  ]
+2026-01-21 14:01:58,433 - INFO -     bbox_min=[-14.368019    -0.34708196   0.356251  ], bbox_max=[-13.663574   0.283485   1.678266]
+2026-01-21 14:01:59,079 - INFO - Processing frame 100/601
+2026-01-21 14:01:59,841 - INFO - Processing frame 200/601
+2026-01-21 14:02:00,719 - INFO - Processing frame 300/601
+2026-01-21 14:02:01,732 - INFO - Processing frame 400/601
+2026-01-21 14:02:02,666 - INFO - Processing frame 500/601
+2026-01-21 14:02:03,535 - INFO - Processing frame 600/601
+2026-01-21 14:02:03,537 - INFO - Track 0 trajectory data:
+2026-01-21 14:02:03,537 - INFO -   Point 0: bbox_extent=[1.121916474197759, 1.164715222238543, 4.772392047988806]
+2026-01-21 14:02:03,537 - INFO -   Point 1: bbox_extent=[1.1246979052338086, 1.1626223754822094, 4.529725243772142]
+2026-01-21 14:02:03,537 - INFO -   Point 2: bbox_extent=[1.131002446310866, 1.163351999566953, 4.578876074399471]
+2026-01-21 14:02:03,537 - INFO - Track 1 trajectory data:
+2026-01-21 14:02:03,537 - INFO -   Point 0: bbox_extent=[3.610937243951928, 0.514506123052091, 2.8086898170918766]
+2026-01-21 14:02:03,537 - INFO -   Point 1: bbox_extent=[3.6140362490195526, 0.5068010843136239, 2.784681629689278]
+2026-01-21 14:02:03,537 - INFO -   Point 2: bbox_extent=[3.618005450007866, 0.5074244924747581, 2.7969826691035666]
+2026-01-21 14:02:03,537 - INFO - Track 2 trajectory data:
+2026-01-21 14:02:03,537 - INFO -   Point 0: bbox_extent=[0.6964717724442823, 0.6396250141898866, 1.3515172494877596]
+2026-01-21 14:02:03,537 - INFO -   Point 1: bbox_extent=[0.6937128348563356, 0.6368705634126687, 1.3477386441036134]
+2026-01-21 14:02:03,537 - INFO -   Point 2: bbox_extent=[0.6939454163430085, 0.6296680923789751, 1.3489984215554423]
+2026-01-21 14:02:03,814 - INFO - Frame results saved to experiments/simulated/sim-3/outputs/frame_results.json
+2026-01-21 14:02:04,088 - INFO - Trajectories saved to experiments/simulated/sim-3/outputs/trajectories.json
+2026-01-21 14:02:04,088 - INFO - Sample trajectory data (first 3 tracks):
+2026-01-21 14:02:04,088 - INFO - Track 0 (first 3 points):
+2026-01-21 14:02:04,088 - INFO -   Point 0 (ACTUAL VALUES):
+2026-01-21 14:02:04,088 - INFO -     bbox_extent: [1.121916474197759, 1.164715222238543, 4.772392047988806]
+2026-01-21 14:02:04,088 - INFO -     bbox_min: [5.517056136680812, -6.57547208255513, 0.27764021676921624]
+2026-01-21 14:02:04,088 - INFO -     bbox_max: [6.638972610878571, -5.410756860316587, 5.050032264758022]
+2026-01-21 14:02:04,088 - INFO -     position: [6.078014373779691, -5.993114471435859, 2.663836240763619]
+2026-01-21 14:02:04,088 - INFO -     frame_id: 2
+2026-01-21 14:02:04,088 - INFO -   Point 1 (ACTUAL VALUES):
+2026-01-21 14:02:04,088 - INFO -     bbox_extent: [1.1246979052338086, 1.1626223754822094, 4.529725243772142]
+2026-01-21 14:02:04,088 - INFO -     bbox_min: [5.491140768689764, -6.564881118906774, 0.5788684041279155]
+2026-01-21 14:02:04,088 - INFO -     bbox_max: [6.615838673923573, -5.402258743424564, 5.108593647900058]
+2026-01-21 14:02:04,088 - INFO -     position: [6.0534897213066685, -5.983569931165669, 2.8437310260139865]
+2026-01-21 14:02:04,088 - INFO -     frame_id: 3
+2026-01-21 14:02:04,089 - INFO -   Point 2 (ACTUAL VALUES):
+2026-01-21 14:02:04,089 - INFO -     bbox_extent: [1.131002446310866, 1.163351999566953, 4.578876074399471]
+2026-01-21 14:02:04,089 - INFO -     bbox_min: [5.5084120388723585, -6.579721542174231, 0.3358138080972397]
+2026-01-21 14:02:04,089 - INFO -     bbox_max: [6.639414485183225, -5.416369542607279, 4.9146898824967105]
+2026-01-21 14:02:04,089 - INFO -     position: [6.073913262027792, -5.998045542390755, 2.625251845296975]
+2026-01-21 14:02:04,089 - INFO -     frame_id: 4
+2026-01-21 14:02:04,089 - INFO - Track 1 (first 3 points):
+2026-01-21 14:02:04,089 - INFO -   Point 0 (ACTUAL VALUES):
+2026-01-21 14:02:04,089 - INFO -     bbox_extent: [3.610937243951928, 0.514506123052091, 2.8086898170918766]
+2026-01-21 14:02:04,089 - INFO -     bbox_min: [-6.371212545164642, 6.733242620236642, 0.028636940170172265]
+2026-01-21 14:02:04,089 - INFO -     bbox_max: [-2.760275301212715, 7.247748743288732, 2.8373267572620486]
+2026-01-21 14:02:04,089 - INFO -     position: [-4.565743923188679, 6.990495681762687, 1.4329818487161106]
+2026-01-21 14:02:04,089 - INFO -     frame_id: 2
+2026-01-21 14:02:04,089 - INFO -   Point 1 (ACTUAL VALUES):
+2026-01-21 14:02:04,089 - INFO -     bbox_extent: [3.6140362490195526, 0.5068010843136239, 2.784681629689278]
+2026-01-21 14:02:04,089 - INFO -     bbox_min: [-6.353886672343188, 6.731402935315206, -0.016677933472978523]
+2026-01-21 14:02:04,089 - INFO -     bbox_max: [-2.7398504233236363, 7.23820401962883, 2.7680036962162995]
+2026-01-21 14:02:04,089 - INFO -     position: [-4.546868547833412, 6.984803477472018, 1.3756628813716605]
+2026-01-21 14:02:04,089 - INFO -     frame_id: 3
+2026-01-21 14:02:04,089 - INFO -   Point 2 (ACTUAL VALUES):
+2026-01-21 14:02:04,089 - INFO -     bbox_extent: [3.618005450007866, 0.5074244924747581, 2.7969826691035666]
+2026-01-21 14:02:04,089 - INFO -     bbox_min: [-6.371188832285789, 6.734799375844075, 0.020348965543204978]
+2026-01-21 14:02:04,089 - INFO -     bbox_max: [-2.753183382277923, 7.242223868318833, 2.817331634646772]
+2026-01-21 14:02:04,089 - INFO -     position: [-4.562186107281856, 6.988511622081454, 1.4188403000949883]
+2026-01-21 14:02:04,089 - INFO -     frame_id: 4
+2026-01-21 14:02:04,089 - INFO - Track 2 (first 3 points):
+2026-01-21 14:02:04,089 - INFO -   Point 0 (ACTUAL VALUES):
+2026-01-21 14:02:04,089 - INFO -     bbox_extent: [0.6964717724442823, 0.6396250141898866, 1.3515172494877596]
+2026-01-21 14:02:04,089 - INFO -     bbox_min: [-14.321389954219372, -0.34904215178210374, 0.3411150925655193]
+2026-01-21 14:02:04,089 - INFO -     bbox_max: [-13.624918181775088, 0.29058286240778286, 1.692632342053279]
+2026-01-21 14:02:04,089 - INFO -     position: [-13.97315406799723, -0.029229644687160463, 1.0168737173093991]
+2026-01-21 14:02:04,089 - INFO -     frame_id: 2
+2026-01-21 14:02:04,089 - INFO -   Point 1 (ACTUAL VALUES):
+2026-01-21 14:02:04,089 - INFO -     bbox_extent: [0.6937128348563356, 0.6368705634126687, 1.3477386441036134]
+2026-01-21 14:02:04,089 - INFO -     bbox_min: [-14.289258780028627, -0.3343246257025774, 0.34572110790128197]
+2026-01-21 14:02:04,089 - INFO -     bbox_max: [-13.595545945172292, 0.30254593771009125, 1.6934597520048955]
+2026-01-21 14:02:04,089 - INFO -     position: [-13.94240236260046, -0.0158893439962431, 1.0195904299530887]
+2026-01-21 14:02:04,089 - INFO -     frame_id: 3
+2026-01-21 14:02:04,089 - INFO -   Point 2 (ACTUAL VALUES):
+2026-01-21 14:02:04,090 - INFO -     bbox_extent: [0.6939454163430085, 0.6296680923789751, 1.3489984215554423]
+2026-01-21 14:02:04,090 - INFO -     bbox_min: [-14.240153466880805, -0.323830669442038, 0.34722619829520596]
+2026-01-21 14:02:04,090 - INFO -     bbox_max: [-13.546208050537796, 0.30583742293693716, 1.696224619850648]
+2026-01-21 14:02:04,090 - INFO -     position: [-13.8931807587093, -0.008996623252550422, 1.021725409072927]
+2026-01-21 14:02:04,090 - INFO -     frame_id: 4
+2026-01-21 14:02:04,091 - INFO - Trajectory metadata saved to experiments/simulated/sim-3/outputs/trajectory_metadata.json
+2026-01-21 14:02:04,091 - INFO - Experiment completed successfully!
+2026-01-21 14:48:38,631 - INFO - Kalman filter configured for bbox dimension tracking
+2026-01-21 14:48:38,632 - INFO -   track_bbox_dim_sizes: True
+2026-01-21 14:48:38,632 - INFO -   measure_bbox_dim_sizes: True
+2026-01-21 14:48:38,632 - INFO - Initializing components...
+2026-01-21 14:48:38,636 - INFO - Dataset contains 601 frames
+2026-01-21 14:48:38,636 - INFO - Kalman filter state dimension: 9
+2026-01-21 14:48:38,636 - INFO - Kalman filter measurement dimension: 6
+2026-01-21 14:48:38,636 - INFO - Kalman state indices: {'centroid_position': (0, 3), 'centroid_velocity': (3, 6), 'bbox_sizes': (6, 9)}
+2026-01-21 14:48:38,636 - INFO - Kalman measurement indices: {'centroid_position': (0, 3), 'bbox_sizes': (3, 6)}
+2026-01-21 14:48:38,636 - INFO - Starting experiment
+2026-01-21 14:48:38,636 - INFO - Data path: ./experiments/simulated/sim-3/data/frames
+2026-01-21 14:48:38,636 - INFO - Output directory: ./experiments/simulated/sim-3/outputs
+2026-01-21 14:48:38,636 - INFO - Output format: json
+2026-01-21 14:48:38,636 - INFO - Trajectory data collection: True
+2026-01-21 14:48:38,636 - INFO - Track bbox dimensions: True
+2026-01-21 14:48:38,639 - INFO - Configuration saved to experiments/simulated/sim-3/outputs/config.yaml
+2026-01-21 14:48:38,640 - INFO - Processing 601 frames...
+2026-01-21 14:48:38,643 - INFO - Processing frame 0/601
+2026-01-21 14:48:38,646 - INFO - Number of detections in frame: 3
+2026-01-21 14:48:38,646 - INFO -   Detection 0: centroid=[ 6.080768  -5.9940186  2.6446633], bbox_extent=[1.120914  1.1561823 4.687948 ]
+2026-01-21 14:48:38,646 - INFO -     bbox_min=[ 5.4574575  -6.575496    0.22768784], bbox_max=[ 6.578372 -5.419314  4.915636]
+2026-01-21 14:48:38,646 - INFO -   Detection 1: centroid=[-4.581731   6.988874   1.4135444], bbox_extent=[3.627105  0.5023513 2.82283  ]
+2026-01-21 14:48:38,646 - INFO -     bbox_min=[-6.630733    6.7448244   0.08123708], bbox_max=[-3.0036283  7.247176   2.904067 ]
+2026-01-21 14:48:38,646 - INFO -   Detection 2: centroid=[-14.06292     -0.04850246   1.0181073 ], bbox_extent=[0.70444393 0.63056695 1.322015  ]
+2026-01-21 14:48:38,647 - INFO -     bbox_min=[-14.368019    -0.34708196   0.356251  ], bbox_max=[-13.663574   0.283485   1.678266]
+2026-01-21 14:48:39,289 - INFO - Processing frame 100/601
+2026-01-21 14:48:39,969 - INFO - Processing frame 200/601
+2026-01-21 14:48:40,736 - INFO - Processing frame 300/601
+2026-01-21 14:48:41,609 - INFO - Processing frame 400/601
+2026-01-21 14:48:42,431 - INFO - Processing frame 500/601
+2026-01-21 14:48:43,268 - INFO - Processing frame 600/601
+2026-01-21 14:48:43,270 - INFO - Track 0 trajectory data:
+2026-01-21 14:48:43,270 - INFO -   Point 0: bbox_extent=[1.121916474197759, 1.164715222238543, 4.772392047988806]
+2026-01-21 14:48:43,270 - INFO -   Point 1: bbox_extent=[1.1246979052338086, 1.1626223754822094, 4.529725243772142]
+2026-01-21 14:48:43,270 - INFO -   Point 2: bbox_extent=[1.131002446310866, 1.163351999566953, 4.578876074399471]
+2026-01-21 14:48:43,270 - INFO - Track 1 trajectory data:
+2026-01-21 14:48:43,270 - INFO -   Point 0: bbox_extent=[3.610937243951928, 0.514506123052091, 2.8086898170918766]
+2026-01-21 14:48:43,270 - INFO -   Point 1: bbox_extent=[3.6140362490195526, 0.5068010843136239, 2.784681629689278]
+2026-01-21 14:48:43,270 - INFO -   Point 2: bbox_extent=[3.618005450007866, 0.5074244924747581, 2.7969826691035666]
+2026-01-21 14:48:43,270 - INFO - Track 2 trajectory data:
+2026-01-21 14:48:43,270 - INFO -   Point 0: bbox_extent=[0.6964717724442823, 0.6396250141898866, 1.3515172494877596]
+2026-01-21 14:48:43,270 - INFO -   Point 1: bbox_extent=[0.6937128348563356, 0.6368705634126687, 1.3477386441036134]
+2026-01-21 14:48:43,270 - INFO -   Point 2: bbox_extent=[0.6939454163430085, 0.6296680923789751, 1.3489984215554423]
+2026-01-21 14:48:43,537 - INFO - Frame results saved to experiments/simulated/sim-3/outputs/frame_results.json
+2026-01-21 14:48:43,811 - INFO - Trajectories saved to experiments/simulated/sim-3/outputs/trajectories.json
+2026-01-21 14:48:43,811 - INFO - Sample trajectory data (first 3 tracks):
+2026-01-21 14:48:43,811 - INFO - Track 0 (first 3 points):
+2026-01-21 14:48:43,811 - INFO -   Point 0 (ACTUAL VALUES):
+2026-01-21 14:48:43,811 - INFO -     bbox_extent: [1.121916474197759, 1.164715222238543, 4.772392047988806]
+2026-01-21 14:48:43,811 - INFO -     bbox_min: [5.517056136680812, -6.57547208255513, 0.27764021676921624]
+2026-01-21 14:48:43,811 - INFO -     bbox_max: [6.638972610878571, -5.410756860316587, 5.050032264758022]
+2026-01-21 14:48:43,811 - INFO -     position: [6.078014373779691, -5.993114471435859, 2.663836240763619]
+2026-01-21 14:48:43,811 - INFO -     frame_id: 2
+2026-01-21 14:48:43,811 - INFO -   Point 1 (ACTUAL VALUES):
+2026-01-21 14:48:43,811 - INFO -     bbox_extent: [1.1246979052338086, 1.1626223754822094, 4.529725243772142]
+2026-01-21 14:48:43,812 - INFO -     bbox_min: [5.491140768689764, -6.564881118906774, 0.5788684041279155]
+2026-01-21 14:48:43,812 - INFO -     bbox_max: [6.615838673923573, -5.402258743424564, 5.108593647900058]
+2026-01-21 14:48:43,812 - INFO -     position: [6.0534897213066685, -5.983569931165669, 2.8437310260139865]
+2026-01-21 14:48:43,812 - INFO -     frame_id: 3
+2026-01-21 14:48:43,812 - INFO -   Point 2 (ACTUAL VALUES):
+2026-01-21 14:48:43,812 - INFO -     bbox_extent: [1.131002446310866, 1.163351999566953, 4.578876074399471]
+2026-01-21 14:48:43,812 - INFO -     bbox_min: [5.5084120388723585, -6.579721542174231, 0.3358138080972397]
+2026-01-21 14:48:43,812 - INFO -     bbox_max: [6.639414485183225, -5.416369542607279, 4.9146898824967105]
+2026-01-21 14:48:43,812 - INFO -     position: [6.073913262027792, -5.998045542390755, 2.625251845296975]
+2026-01-21 14:48:43,812 - INFO -     frame_id: 4
+2026-01-21 14:48:43,812 - INFO - Track 1 (first 3 points):
+2026-01-21 14:48:43,812 - INFO -   Point 0 (ACTUAL VALUES):
+2026-01-21 14:48:43,812 - INFO -     bbox_extent: [3.610937243951928, 0.514506123052091, 2.8086898170918766]
+2026-01-21 14:48:43,812 - INFO -     bbox_min: [-6.371212545164642, 6.733242620236642, 0.028636940170172265]
+2026-01-21 14:48:43,812 - INFO -     bbox_max: [-2.760275301212715, 7.247748743288732, 2.8373267572620486]
+2026-01-21 14:48:43,812 - INFO -     position: [-4.565743923188679, 6.990495681762687, 1.4329818487161106]
+2026-01-21 14:48:43,812 - INFO -     frame_id: 2
+2026-01-21 14:48:43,812 - INFO -   Point 1 (ACTUAL VALUES):
+2026-01-21 14:48:43,812 - INFO -     bbox_extent: [3.6140362490195526, 0.5068010843136239, 2.784681629689278]
+2026-01-21 14:48:43,812 - INFO -     bbox_min: [-6.353886672343188, 6.731402935315206, -0.016677933472978523]
+2026-01-21 14:48:43,812 - INFO -     bbox_max: [-2.7398504233236363, 7.23820401962883, 2.7680036962162995]
+2026-01-21 14:48:43,812 - INFO -     position: [-4.546868547833412, 6.984803477472018, 1.3756628813716605]
+2026-01-21 14:48:43,812 - INFO -     frame_id: 3
+2026-01-21 14:48:43,812 - INFO -   Point 2 (ACTUAL VALUES):
+2026-01-21 14:48:43,812 - INFO -     bbox_extent: [3.618005450007866, 0.5074244924747581, 2.7969826691035666]
+2026-01-21 14:48:43,812 - INFO -     bbox_min: [-6.371188832285789, 6.734799375844075, 0.020348965543204978]
+2026-01-21 14:48:43,812 - INFO -     bbox_max: [-2.753183382277923, 7.242223868318833, 2.817331634646772]
+2026-01-21 14:48:43,812 - INFO -     position: [-4.562186107281856, 6.988511622081454, 1.4188403000949883]
+2026-01-21 14:48:43,812 - INFO -     frame_id: 4
+2026-01-21 14:48:43,812 - INFO - Track 2 (first 3 points):
+2026-01-21 14:48:43,812 - INFO -   Point 0 (ACTUAL VALUES):
+2026-01-21 14:48:43,812 - INFO -     bbox_extent: [0.6964717724442823, 0.6396250141898866, 1.3515172494877596]
+2026-01-21 14:48:43,812 - INFO -     bbox_min: [-14.321389954219372, -0.34904215178210374, 0.3411150925655193]
+2026-01-21 14:48:43,812 - INFO -     bbox_max: [-13.624918181775088, 0.29058286240778286, 1.692632342053279]
+2026-01-21 14:48:43,812 - INFO -     position: [-13.97315406799723, -0.029229644687160463, 1.0168737173093991]
+2026-01-21 14:48:43,812 - INFO -     frame_id: 2
+2026-01-21 14:48:43,812 - INFO -   Point 1 (ACTUAL VALUES):
+2026-01-21 14:48:43,812 - INFO -     bbox_extent: [0.6937128348563356, 0.6368705634126687, 1.3477386441036134]
+2026-01-21 14:48:43,812 - INFO -     bbox_min: [-14.289258780028627, -0.3343246257025774, 0.34572110790128197]
+2026-01-21 14:48:43,812 - INFO -     bbox_max: [-13.595545945172292, 0.30254593771009125, 1.6934597520048955]
+2026-01-21 14:48:43,812 - INFO -     position: [-13.94240236260046, -0.0158893439962431, 1.0195904299530887]
+2026-01-21 14:48:43,812 - INFO -     frame_id: 3
+2026-01-21 14:48:43,813 - INFO -   Point 2 (ACTUAL VALUES):
+2026-01-21 14:48:43,813 - INFO -     bbox_extent: [0.6939454163430085, 0.6296680923789751, 1.3489984215554423]
+2026-01-21 14:48:43,813 - INFO -     bbox_min: [-14.240153466880805, -0.323830669442038, 0.34722619829520596]
+2026-01-21 14:48:43,813 - INFO -     bbox_max: [-13.546208050537796, 0.30583742293693716, 1.696224619850648]
+2026-01-21 14:48:43,813 - INFO -     position: [-13.8931807587093, -0.008996623252550422, 1.021725409072927]
+2026-01-21 14:48:43,813 - INFO -     frame_id: 4
+2026-01-21 14:48:43,816 - INFO - Trajectory metadata saved to experiments/simulated/sim-3/outputs/trajectory_metadata.json
+2026-01-21 14:48:43,817 - INFO - Experiment completed successfully!
